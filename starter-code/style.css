@@ -1,0 +1,21 @@
+* {
+  border: 1px solid red;
+}
+
+#logo {
+  display: flex;
+  margin: auto;
+}
+
+#banner {
+  display: flex;
+}
+
+#banner-text {
+  text-align: center;
+}
+
+#banner #buttons {
+  display: flex;
+  justify-content: center;
+}
