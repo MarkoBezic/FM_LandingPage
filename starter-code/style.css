@@ -1,21 +1,76 @@
 * {
-  border: 1px solid red;
+  /* border: 1px solid red; */
+  font-family: "Red Hat Display", sans-serif;
 }
 
 #logo {
+  padding-top: 40px;
   display: flex;
   margin: auto;
 }
 
 #banner {
   display: flex;
+  align-items: center;
+}
+
+img {
+  padding: 30px;
 }
 
 #banner-text {
+  padding: 0 20px;
   text-align: center;
+  min-height: 304px;
+  min-width: 540px;
+}
+
+h1 {
+  font-size: 64px;
+  padding: 20px 40px 0;
+}
+
+p {
+  font-size: 18px;
+  color: #87879d;
 }
 
 #banner #buttons {
   display: flex;
   justify-content: center;
+}
+
+button {
+  border-radius: 32px;
+  height: 58px;
+  padding: 0 30px;
+  margin: 0 10px;
+  font-size: 16px;
+  color: white;
+  font-weight: bolder;
+  border: none;
+}
+
+.font-blue {
+  color: #8fe3f9;
+}
+
+.button-primary {
+  background-color: #4d96a9;
+}
+
+.button-primary:hover {
+  background-color: #68b5c9;
+}
+
+.button-secondary {
+  background-color: rgb(133, 95, 177);
+}
+
+.button-secondary:hover {
+  background-color: rgb(217, 184, 255);
+}
+
+main {
+  padding-top: 50px;
 }
