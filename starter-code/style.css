@@ -1,6 +1,8 @@
 * {
   /* border: 1px solid red; */
   font-family: "Red Hat Display", sans-serif;
+  padding: 0px;
+  margin: 0px;
 }
 
 #logo {
@@ -113,4 +115,30 @@ h2 {
   font-size: 40px;
   line-height: 44px;
   padding: 0 50px;
+}
+
+footer {
+  background-image: url(/starter-code/assets/desktop/image-footer.jpg);
+}
+
+.overlay {
+  display: flex;
+  align-items: center;
+  background-color: rgb(77, 150, 168, 0.85);
+  height: 308px;
+  justify-content: space-around;
+}
+
+footer p {
+  color: white;
+  width: 350px;
+}
+
+footer h2 {
+  color: white;
+  width: 350px;
+}
+
+footer span {
+  color: #d9b8ff;
 }
