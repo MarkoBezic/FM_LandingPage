@@ -21,6 +21,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 
 img {
@@ -35,7 +36,7 @@ img {
   padding-top: 0;
 }
 
-#banner-text {
+#banner-text-lg {
   padding: 0 20px;
   text-align: center;
   min-height: 304px;
@@ -44,9 +45,15 @@ img {
   max-width: 540px;
 }
 
+.banner-text {
+  display: none;
+}
+
 h1 {
   font-size: 64px;
-  padding: 20px 40px 0;
+  padding: 20px 40px 40px;
+  width: 445px;
+  height: 128px;
 }
 
 p {
@@ -173,7 +180,7 @@ h2 {
 }
 
 footer {
-  background-image: url(/starter-code/assets/desktop/image-footer.jpg);
+  background-image: url(/meet_landing_page/assets/desktop/image-footer.jpg);
 }
 
 .overlay {
@@ -196,4 +203,67 @@ footer h2 {
 
 footer span {
   color: #d9b8ff;
+}
+
+@media (max-width: 768px) {
+  * {
+    /* border: 1px solid green; */
+  }
+
+  #logo {
+    padding-bottom: 40px;
+  }
+
+  .banner-text-lg {
+    display: none;
+  }
+
+  .banner-img-right {
+    padding: 0;
+  }
+
+  .banner-text {
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    padding: 0 20px;
+    text-align: center;
+    min-height: 304px;
+    min-width: 540px;
+    max-height: 304px;
+    max-width: 540px;
+  }
+
+  .banner-text p {
+    padding: 20px 0;
+  }
+
+  .container-main-img {
+    transform: scale(0.62);
+    padding: 50px 0 0;
+  }
+
+  .overline {
+    padding: 0;
+  }
+
+  .overlay {
+    flex-direction: column;
+    height: 428px;
+    text-align: center;
+  }
+
+  .overlay h2 {
+    padding: 60px 0 0;
+  }
+
+  .overlay p {
+    width: 573px;
+  }
+
+  footer {
+    background: url(/meet_landing_page/assets/desktop/image-footer.jpg)
+      no-repeat center;
+    background-size: cover;
+  }
 }
