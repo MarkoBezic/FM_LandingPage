@@ -1,5 +1,127 @@
 * {
   /* border: 1px solid red; */
+  margin: 0;
+  padding: 0;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+#logo {
+  padding: 40px;
+  display: flex;
+  margin: auto;
+}
+
+#banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.banner-img-left,
+.banner-img-right {
+  width: auto;
+  padding: 9px;
+  max-height: 180px;
+}
+
+.banner-text-lg {
+  display: none;
+}
+
+.banner-text {
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  text-align: center;
+}
+
+h1 {
+  font-size: 40px;
+  width: 280px;
+  height: 128px;
+  margin: auto;
+  padding-top: 30px;
+}
+
+p {
+  font-size: 16px;
+  color: #87879d;
+  padding: 22px;
+  width: 327px;
+  margin: auto;
+}
+
+#buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  border-radius: 32px;
+  height: 58px;
+  padding: 0 30px;
+  margin: auto;
+  margin-top: 17px;
+  font-size: 16px;
+  color: white;
+  font-weight: bolder;
+  border: none;
+  width: fit-content;
+}
+
+.font-blue {
+  color: #8fe3f9;
+}
+
+.button-primary {
+  background-color: #4d96a9;
+}
+
+.button-primary:hover {
+  background-color: #71c0d4;
+}
+
+.button-secondary {
+  background-color: rgb(133, 95, 177);
+}
+
+.button-secondary:hover {
+  background-color: #b18bdd;
+}
+
+.section-number {
+  transform: translateY(32px);
+  display: flex;
+  flex-direction: column;
+}
+
+.line {
+  border: rgb(135, 135, 157, 0.13) solid 0.5px;
+  width: 0;
+  height: 84px;
+  margin: auto;
+}
+
+.circle {
+  background-color: white;
+  margin: auto;
+  border: rgb(135, 135, 157, 0.25) solid 1px;
+  border-radius: 50%;
+  padding: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.container-main-img {
+  transform: scale(0.62);
+  padding: 50px 0 0;
+}
+/* 
+
+* {
+  border: 1px solid red;
   font-family: "Red Hat Display", sans-serif;
   padding: 0px;
   margin: 0px;
@@ -207,7 +329,7 @@ footer span {
 
 @media (max-width: 768px) {
   * {
-    /* border: 1px solid green; */
+    border: 1px solid green;
   }
 
   #logo {
@@ -266,4 +388,36 @@ footer span {
       no-repeat center;
     background-size: cover;
   }
+
+  @media (max-width: 600px) {
+    * {
+      border: solid 1px pink;
+    }
+
+    .banner-img-left,
+    .banner-img-right {
+      width: auto;
+      max-height: 180px;
+    }
+
+    h1 {
+      width: auto;
+      height: auto;
+    }
+
+    .banner-text {
+      display: flex;
+      margin: auto;
+      flex-direction: column;
+      padding: 0;
+      text-align: center;
+      height: auto;
+      width: auto;
+      min-width: none;
+      min-height: none;
+      max-width: none;
+      max-height: none;
+    }
+  }
 }
+*/
