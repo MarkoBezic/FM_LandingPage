@@ -38,6 +38,7 @@
 
 h1 {
   font-size: 40px;
+  line-height: 48px;
   width: 280px;
   height: 128px;
   margin: auto;
@@ -46,6 +47,8 @@ h1 {
 
 .banner-text p {
   width: 327px;
+  line-height: 26px;
+  padding-top: 0;
 }
 
 p {
@@ -180,15 +183,14 @@ footer {
   flex-direction: column;
   align-items: center;
   background-color: rgb(77, 150, 168, 0.85);
-  height: 428px;
+  height: 540px;
   text-align: center;
-  padding-bottom: 50px;
 }
 
 h2 {
   font-size: 40px;
   line-height: 44px;
-  padding: 80px 0 0;
+  padding: 100px 0 0;
 }
 
 footer h2 {
@@ -197,14 +199,67 @@ footer h2 {
 }
 
 footer p {
+  margin: 20px;
   color: white;
   font-size: 18px;
   line-height: 26px;
-  width: 350px;
+  width: 327px;
 }
 
 footer span {
   color: #d9b8ff;
+}
+
+@media (min-width: 767px) {
+  .banner-img-left,
+  .banner-img-right {
+    width: auto;
+    padding: 9px;
+    max-height: 303px;
+  }
+
+  #buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  button {
+    margin: 17px;
+    width: auto;
+  }
+
+  .banner-text p {
+    width: 457px;
+  }
+
+  .box-2 {
+    width: auto;
+  }
+
+  .box-2 h2 {
+    width: 445px;
+    margin: auto;
+    font-size: 40px;
+    line-height: 44px;
+  }
+
+  .box-2 p {
+    width: 573px;
+  }
+
+  .overlay {
+    height: 428px;
+    padding-bottom: 30px;
+  }
+
+  .overlay h2 {
+    padding: 80px 0 0;
+  }
+
+  .overlay p {
+    width: 573px;
+    padding: 12px;
+  }
 }
 
 /* 
