@@ -1,5 +1,4 @@
 * {
-  /* border: 1px solid red; */
   margin: 0;
   padding: 0;
   font-family: "Red Hat Display", sans-serif;
@@ -262,306 +261,68 @@ footer span {
   }
 }
 
-/* 
-
-* {
-  border: 1px solid red;
-  font-family: "Red Hat Display", sans-serif;
-  padding: 0px;
-  margin: 0px;
-}
-
-#logo {
-  padding-top: 40px;
-  display: flex;
-  margin: auto;
-}
-
-header {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-#banner {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
-img {
-  padding: 30px;
-}
-
-.banner-img-right {
-  padding-top: 100px;
-}
-
-.banner-img-left {
-  padding-top: 0;
-}
-
-#banner-text-lg {
-  padding: 0 20px;
-  text-align: center;
-  min-height: 304px;
-  min-width: 540px;
-  max-height: 304px;
-  max-width: 540px;
-}
-
-.banner-text {
-  display: none;
-}
-
-h1 {
-  font-size: 64px;
-  padding: 20px 40px 40px;
-  width: 445px;
-  height: 128px;
-}
-
-p {
-  font-size: 18px;
-  color: #87879d;
-}
-
-#banner p {
-  padding: 20px 0;
-}
-
-#banner #buttons {
-  display: flex;
-  justify-content: center;
-  padding: 20px 0;
-}
-
-button {
-  border-radius: 32px;
-  height: 58px;
-  padding: 0 30px;
-  margin: 0 10px;
-  font-size: 16px;
-  color: white;
-  font-weight: bolder;
-  border: none;
-}
-
-.font-blue {
-  color: #8fe3f9;
-}
-
-.button-primary {
-  background-color: #4d96a9;
-}
-
-.button-primary:hover {
-  background-color: #71c0d4;
-}
-
-.button-secondary {
-  background-color: rgb(133, 95, 177);
-}
-
-.button-secondary:hover {
-  background-color: #b18bdd;
-}
-
-.section-number {
-  transform: translateY(32px);
-  display: flex;
-  flex-direction: column;
-}
-
-.line {
-  border: rgb(135, 135, 157, 0.13) solid 0.5px;
-  width: 0;
-  height: 84px;
-  margin: auto;
-}
-
-.circle {
-  background-color: white;
-  margin: auto;
-  border: rgb(135, 135, 157, 0.25) solid 1px;
-  border-radius: 50%;
-  padding: 20px;
-  font-size: 16px;
-  font-weight: bold;
-  text-align: center;
-}
-
-main {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding-top: 50px;
-}
-
-.container-main-img {
-  display: flex;
-  justify-content: center;
-  padding: 100px 0 0;
-}
-
-.main-img {
-  max-height: 242px;
-  max-width: 255px;
-  padding: 15px;
-}
-
-.box-2 {
-  display: flex;
-  flex-direction: column;
-  margin: auto;
-  width: 540px;
-  justify-items: center;
-  text-align: center;
-}
-
-.box-2 h2 {
-  padding: 20px;
-}
-
-.main-description {
-  padding: 20px 10px;
-}
-
-.overline {
-  color: #4d96a9;
-  text-transform: uppercase;
-  margin: auto;
-  padding: 40px 0 0px;
-  font-size: 16px;
-  letter-spacing: 4px;
-  line-height: 26px;
-  font-weight: bold;
-}
-
-h2 {
-  font-size: 40px;
-  line-height: 44px;
-  padding: 0 50px;
-}
-
-footer {
-  background-image: url(/meet_landing_page/assets/desktop/image-footer.jpg);
-}
-
-.overlay {
-  display: flex;
-  align-items: center;
-  background-color: rgb(77, 150, 168, 0.85);
-  height: 308px;
-  justify-content: space-around;
-}
-
-footer p {
-  color: white;
-  width: 350px;
-}
-
-footer h2 {
-  color: white;
-  width: 350px;
-}
-
-footer span {
-  color: #d9b8ff;
-}
-
-@media (max-width: 768px) {
-  * {
-    border: 1px solid green;
-  }
-
-  #logo {
-    padding-bottom: 40px;
-  }
-
-  .banner-text-lg {
-    display: none;
+@media (min-width: 1024px) {
+  .banner-img-left {
+    align-self: start;
   }
 
   .banner-img-right {
-    padding: 0;
+    align-self: end;
+    padding-top: 60px;
+  }
+
+  .banner-text-lg {
+    display: block;
+    width: 540px;
+    align-self: end;
+  }
+
+  .banner-text-lg p {
+    width: 480px;
+  }
+
+  h1 {
+    padding-top: 0;
+    font-size: 64px;
+    width: 445px;
+    line-height: 64px;
   }
 
   .banner-text {
-    display: flex;
-    margin: auto;
-    flex-direction: column;
-    padding: 0 20px;
-    text-align: center;
-    min-height: 304px;
-    min-width: 540px;
-    max-height: 304px;
-    max-width: 540px;
-  }
-
-  .banner-text p {
-    padding: 20px 0;
+    display: none;
   }
 
   .container-main-img {
-    transform: scale(0.62);
-    padding: 50px 0 0;
+    justify-content: space-between;
+    margin: auto;
   }
 
-  .overline {
-    padding: 0;
+  .main-img {
+    transform: scale(1.5);
+    margin: 35px;
+  }
+  .main-description {
+    max-width: 460px;
   }
 
   .overlay {
-    flex-direction: column;
-    height: 428px;
-    text-align: center;
+    flex-direction: row;
+    height: 308px;
+    justify-content: space-around;
   }
 
   .overlay h2 {
-    padding: 60px 0 0;
+    padding: 0px;
+    margin-left: 50px;
+    text-align: left;
   }
 
   .overlay p {
-    width: 573px;
+    text-align: left;
+    width: 350px;
   }
 
-  footer {
-    background: url(/meet_landing_page/assets/desktop/image-footer.jpg)
-      no-repeat center;
-    background-size: cover;
-  }
-
-  @media (max-width: 600px) {
-    * {
-      border: solid 1px pink;
-    }
-
-    .banner-img-left,
-    .banner-img-right {
-      width: auto;
-      max-height: 180px;
-    }
-
-    h1 {
-      width: auto;
-      height: auto;
-    }
-
-    .banner-text {
-      display: flex;
-      margin: auto;
-      flex-direction: column;
-      padding: 0;
-      text-align: center;
-      height: auto;
-      width: auto;
-      min-width: none;
-      min-height: none;
-      max-width: none;
-      max-height: none;
-    }
+  .overlay button {
+    margin-right: 50px;
   }
 }
-*/
